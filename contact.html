@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html"><img src="AZ Platinum HVAC.png" alt="AHAHAHHAHA" class="img-fluid"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ms-5" id="navmenu">
+                <ul class="navbar-nav ms-auto mt-n1">
+                  <li class="nav-item linkbutton">
+                    <a href="tel:123-456-7890" class="nav-link">Call Us Now!</a>
+                  </li>
+              </ul>
+                <ul class="navbar-nav ms-auto mt-n1">
+                    <li class="nav-item linkbutton">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item linkbutton">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</br>
+</br>
+
+    <!--Contact-->
+
+    <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Location:</span> 42069 N 105th St, Scottsdale, AZ 85262
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Phone:</span> (555) 555-5555
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Email:</span>
+                  azplat.hvac@gmail.com
+                </li>
+              </ul>
+              <br>
+                <div class="map-responsive">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.2279252540618!2d-111.85201861812108!3d33.8661664132907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b81d49c6e2a49%3A0x72d83f75e2945de3!2s42069%20N%20105th%20St%2C%20Scottsdale%2C%20AZ%2085262!5e0!3m2!1sen!2sus!4v1643245165811!5m2!1sen!2sus" width="600" height="450" style="border:0;"loading="lazy" allowfullscreen class="mapboi"></iframe>
+              </div>
+            </div>
+            <div class="col-md">
+                <form>
+                  <h2 class="text-center">Request Service</h2>
+                    <div class="mb-3 formDiv">
+                        <label for="exampleInputFName1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputFName1" placeholder="John Doe">
+                        <div class="d-inline text-danger" id="alertName">Please enter a valid name.</div>
+                      </div>
+                    <div class="mb-3 formDiv">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@mail.com">
+                      <div class="d-inline text-danger" id="alertEmail">Please enter a valid email address.</div>
+                    </div>
+                    <div class="mb-3 formDiv">
+                        <label for="exampleInputPhone1" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="exampleInputPhone1" placeholder="123-456-7890">
+                        <div class="d-inline text-danger" id="alertPhone">Please enter a valid phone number</div>
+                      </div>
+                      <div class="mb-3 formDiv">
+                        <label for="exampleInputStreet1" class="form-label">Street</label>
+                        <input type="text" class="form-control" id="exampleInputStreet1" placeholder="1234 N Main St, Phoenix">
+                        <div class="d-inline text-danger" id="alertAddress">Please enter a valid address.</div>
+                      </div>
+                      <div class="mb-3 formDiv">
+                        <label for="exampleInputState1" class="form-label">State</label>
+                        <input type="text" class="form-control" id="exampleInputState1" placeholder="Arizona">
+                        <div class="d-inline text-danger" id="alertState">Please enter a valid state.</div>
+                      </div>
+                      <div class="mb-3 formDiv">
+                        <label for="exampleInputZipCode1" class="form-label">Zip Code</label>
+                        <input type="text" class="form-control" id="exampleInputZipCode1" placeholder="12345" maxlength="5">
+                        <div class="d-inline text-danger" id="alertZip">Please enter a valid zip code.</div>
+                      </div>
+                    <button type="button" class="btn btn-dark" id="request">Submit</button>
+                    <p class="text-secondary mt-2">We'll never share your info with anyone</p>
+                    <p class="text-danger" id="formSubmitMsg">Make sure you have entered all form fields correctly.</p>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--footer-->
+
+      <footer class="footer p-5 bg-white text-dark text-center position-relative">
+        <div class="container">
+          <p class="lead">Copyright &copy; 2022 AZ Platinum HVAC</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Script link for form validation -->
+    <script src="script.js"></script>
+</body>
+</html>

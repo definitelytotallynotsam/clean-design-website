@@ -1,0 +1,88 @@
+@import url(sass.scss);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+} 
+
+@media (max-width: 770px) {
+    .banner{
+        display:none;
+    }
+}
+@media (min-width: 768px) {
+    .news-input {
+    width: 50%;
+}
+}
+
+.linkbutton{
+    font-family: 'Open Sans', sans-serif;
+    font-style:italic;
+    font-weight:800;
+}
+
+.newsletter{
+    background:#be5656
+}
+
+.btn{
+    background:#ffffff;
+    color:black;
+}
+
+.btn:hover{
+    color:white;
+}
+
+.footer{
+    border-top: 3px solid #00000013;
+}
+
+.mt-n1 {
+    margin-right: -30rem;
+  }
+
+.formDiv > div {
+    opacity: 0;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+#formSubmitMsg {
+    opacity: 0;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
